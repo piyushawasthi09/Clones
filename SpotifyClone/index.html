@@ -1,37 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Spotify</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/utility.css" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-  </head>
-  <body>
-    <div class="container flex bg-black">
-      <div class="left">
-        <div class="home bg-grey border rounded m-1 p-1">
-          <div class="logo">
-            <img src="img/logo.svg" alt="Spotify Logo" class="invert wid" />
-          </div>
-          <ul>
-            <li class="flex">
-              <img src="img/home.svg" alt="Home" class="invert" />Home
-            </li>
-            <li class="flex">
-              <img src="img/search.svg" alt="Serch" class="invert" />Search
-            </li>
-          </ul>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spotify</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/utility.css" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+  <div class="container flex bg-black">
+    <div class="left">
+      <div class="home bg-grey border rounded m-1 p-1">
+        <div class="logo">
+          <img src="img/logo.svg" alt="Spotify Logo" class="invert wid" />
         </div>
-        <div class="library border rounded bg-grey m-1 p-1">
-          <div class="heading flex">
-            <img src="img/playlist.svg" alt="" class="invert" />
-            <p>Library</p>
-          </div>
+        <ul>
+          <li class="flex">
+            <img src="img/home.svg" alt="Home" class="invert" />Home
+          </li>
+          <li class="flex">
+            <img src="img/search.svg" alt="Serch" class="invert" />Search
+          </li>
+        </ul>
+      </div>
+      <div class="library border rounded bg-grey m-1">
+        <div class="heading flex">
+          <img src="img/playlist.svg" alt="" class="invert" />
+          <p>Library</p>
         </div>
       </div>
-      <div class="right border bg-grey">asdknjlasndkasmn</div>
     </div>
-  </body>
+    <div class="right border bg-grey">
+      <div class="header">
+        <div class="nav">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M15 18l-6-6 6-6" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 6l6 6-6 6" />
+          </svg>
+        </div>
+        <div class="buttons">
+          <button class="SignUpBtn">Sign Up</button>
+          <button class="LogInBtn">Log In</button>
+        </div>
+      </div>
+      <div class="spotifyPlaylist">
+        <h1>Spotify Playlist</h1>
+        <div class="card-container">
+          <div class="card ">
+            <div class="play">
+              <svg width="47" height="51" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg"
+                style="cursor: pointer;">
+                <!-- Black circular background -->
+                <circle class="circle-bg" cx="40" cy="41" r="33" />
+
+                <!-- Dark green play triangle -->
+                <polygon class="play-icon" points="30,22 58,40 30,58" />
+              </svg>
+            </div>
+            <img src="img/cover.jpg" alt="">
+
+
+            <h2>Happy Hits!</h2>
+            <p>Get your groove on with the happiest tracks around!</p>
+          </div>
+          <div class="card ">
+            <div class="play">
+              <svg width="47" height="51" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg"
+                style="cursor: pointer;">
+                <!-- Black circular background -->
+                <circle class="circle-bg" cx="40" cy="41" r="33" />
+
+                <!-- Dark green play triangle -->
+                <polygon class="play-icon" points="30,22 58,40 30,58" />
+              </svg>
+            </div>
+            <img src="img/cover.jpg" alt="">
+
+
+            <h2>Happy Hits!</h2>
+            <p>Get your groove on with the happiest tracks around!</p>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="playbar">
+        <div class="songinfo"></div>
+        <div class="playButtons">
+          <svg xmlns="http://www.w3.org/2000/svg" width="47" height="51" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="icon icon-previous">
+            <path d="M15 18l-6-6 6-6" />
+          </svg>
+          <svg width="47" height="51" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" style="cursor: pointer;">
+            <!-- Black circular background -->
+            <circle class="circle-bg" cx="40" cy="41" r="33" />
+
+            <!-- Dark green play triangle -->
+            <polygon class="play-icon" points="30,22 58,40 30,58" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="47" height="51" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 6l6 6-6 6" />
+          </svg>
+        </div>
+        <div class="songtime"></div>
+      </div>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+
 </html>

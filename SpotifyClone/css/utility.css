@@ -43,3 +43,28 @@
 h3 {
   font-size: 24px;
 }
+/* Apply this to the entire page */
+body {
+  scrollbar-width: thin;              /* Firefox */
+  scrollbar-color: #444 #111;         /* Firefox: thumb & track */
+}
+
+/* Chrome, Edge, Safari (Webkit) */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111;                   /* Dark track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #444;             /* Dark grey thumb */
+  border-radius: 10px;
+  border: 2px solid #111;             /* Adds space around thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #666;             /* Lighter on hover */
+}
